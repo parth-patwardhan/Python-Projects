@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock title %}
+
+{% block content %} 
+
+{% load crispy_forms_tags %}         
+
+<!--Register--> 
+{% if books %} 
+    {{ books }}
+{% else %}
+    <h2 class="text-center">0 Books Added!!</h2>
+{% endif %}
+{% endblock %}
